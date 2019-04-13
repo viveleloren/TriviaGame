@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Star Wars Trivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- link to favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/images/vader.jpg" />
+
+    <!-- link to external css files and fonts -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Notable|Thasadith|Wire+One" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Star Wars Trivia<div id="time-remaining">1:00</div>
+        </h1>
+    </header>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <button class="button" id="start-button">Begin!</button>
+
+    <br>
+
+    <!-- I'm repeating alot here with these forms, which means there's probably a more efficient way to do this... -->
+    <div class="question"> Which is the only film of the original six in which desert planet Tatooine doesn’t appear?
+    </div>
+
+    <!-- inside each form, the value of the correct answer is set to "correct" -->
+    <form>
+        <input type="radio" name=1 class="choice" value="wrong"> Revenge of The Sith
+        <input type="radio" name=1 class="choice" value="correct"> The Empire Strikes Back
+        <input type="radio" name=1 class="choice" value="wrong"> A New Hope
+    </form>
+
+    <br>
+
+    <div class="question">How old was Padme when she became queen?</div>
+
+    <form>
+        <input type="radio" name=2 class="choice" value="wrong"> 17
+        <input type="radio" name=2 class="choice" value="wrong"> 21
+        <input type="radio" name=2 class="choice" value="correct"> 14
+    </form>
+
+    <br>
+
+    <div class="question">Obi-Wan Kenobi was born on the planet of?</div>
+
+    <form>
+        <input type="radio" name=3 class="choice" value="wrong"> Coruscant
+        <input type="radio" name=3 class="choice" value="correct"> Stewjon
+        <input type="radio" name=3 class="choice" value="wrong"> Alderaan
+    </form>
+
+    <br>
+
+    <div class="question">Which of these species’ names is NEVER mentioned in the films?</div>
+
+    <form>
+        <input type="radio" name=4 class="choice" value="wrong"> Wookies
+        <input type="radio" name=4 class="choice" value="wrong"> Ewoks
+        <input type="radio" name=4 class="choice" value="correct"> Jawas
+    </form>
+
+    <br>
+
+    <div class="question">Yoda is _____ when he passes away?</div>
+
+    <form>
+        <input type="radio" name=5 class="choice" value="correct"> 900
+        <input type="radio" name=5 class="choice" value="wrong"> 800
+        <input type="radio" name=5 class="choice" value="wrong"> 700
+    </form>
+
+    <br>
+
+    <div class="question">Who does R2 NOT carry a message for?</div>
+
+    <form>
+        <input type="radio" name=6 class="choice" value="wrong"> Leia
+        <input type="radio" name=6 class="choice" value="wrong"> Luke
+        <input type="radio" name=6 class="choice" value="correct"> Han
+    </form>
+
+    <br>
+
+    <div class="question">Vader cuts off Luke’s ____ hand.</div>
+
+    <form>
+        <input type="radio" name=7 class="choice" value="correct"> Right
+        <input type="radio" name=7 class="choice" value="wrong"> Left
+    </form>
+
+    <br>
+
+    <!-- buttons for completing the quiz and restarting the game, linked to the javascript for functionality -->
+    <button class="button" id="done-button">Submit!</button>
+    <button id="restart-button">Restart!</button>
+
+    <!-- link to external javaScript file -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+    <!-- link to external javaScript file -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+
+</html>
